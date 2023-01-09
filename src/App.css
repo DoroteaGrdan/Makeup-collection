@@ -1,5 +1,69 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.app {
+  width: 100%;
+}
+
+header h2 {
+  font-weight: lighter;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+main{
+  background-color: black;
+}
+
+#mainIMG {
+  height: 60vh;
+  background-image: url("https://images.pexels.com/photos/60894/blue-eyes-woman-female-makeup-60894.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#cards{
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+#pageButtons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 30px;
+}
+
+.pageNum {
+  height: 28px;
+  width: 28px;
+  border-radius: 20%;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: rgba(253, 126, 251, 0.664) 1px 2px 6px;
+  border: none;
+}
+
+.pageNum:hover{
+  background-color: rgba(251, 100, 165, 0.664);
+  color: white;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: .8rem;
+  padding: 5px 0;
 }
