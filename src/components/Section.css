@@ -1,0 +1,80 @@
+.cards {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.container {
+    cursor: grab;
+    overflow: auto;
+}
+
+.categories{
+    padding: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.container::-webkit-scrollbar{
+    width: 0;
+}
+
+.category {
+    height: 200px;
+    padding: 25px 15px;
+    width: fit-content;
+    box-shadow: rgba(107, 107, 107, 0.671) 2px 2px 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.category img{
+    height: 100px;
+}
+
+.brandHeader {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-size: 4rem;
+}
+
+.pageButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 30px;
+}
+
+.pageNum {
+    height: 28px;
+    width: 28px;
+    border-radius: 20%;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: white;
+    box-shadow: rgba(96, 96, 96, 0.664) 1px 2px 6px;
+    border: none;
+}
+
+.pageNum:hover,
+.active {
+    background-color: rgba(0, 0, 0, 0.664);
+    color: white;
+}
+
+@media only screen and (min-width: 1400px) {
+    .categories {
+      justify-content: center;
+      align-items: center;
+    }
+  }

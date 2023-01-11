@@ -2,22 +2,91 @@
   box-sizing: border-box;
   margin: 0;
   font-family: 'Nunito Sans', sans-serif;
+  font-weight: lighter;
+}
+
+a {
+  color: black;
+  text-decoration: none;
 }
 
 .app {
   width: 100%;
 }
 
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  position: fixed;
+  top: 0;
+  background-color: white;
+}
+
 header h2 {
   font-weight: lighter;
-  background-color: black;
-  color: white;
   text-align: center;
   padding: 10px 0;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.dropbtn {
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  background-color: white;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #a7a7a7;
 }
 
 main{
-  background-color: black;
+  background-color: white;
 }
 
 #mainIMG {
@@ -28,42 +97,14 @@ main{
   background-size: cover;
 }
 
-#cards{
-  padding: 30px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
-#pageButtons{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  padding-bottom: 30px;
-}
-
-.pageNum {
-  height: 28px;
-  width: 28px;
-  border-radius: 20%;
-  font-weight: 600;
-  cursor: pointer;
-  box-shadow: rgba(253, 126, 251, 0.664) 1px 2px 6px;
-  border: none;
-}
-
-.pageNum:hover{
-  background-color: rgba(251, 100, 165, 0.664);
-  color: white;
-}
 
 footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: black;
+  color: white;
   font-size: .8rem;
   padding: 5px 0;
 }
