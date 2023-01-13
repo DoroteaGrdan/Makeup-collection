@@ -10,10 +10,6 @@ a {
   text-decoration: none;
 }
 
-.app {
-  width: 100%;
-}
-
 header {
   display: flex;
   width: 100%;
@@ -57,9 +53,10 @@ nav {
   display: none;
   position: absolute;
   background-color: #ffffff;
-  min-width: 160px;
+  min-width: 150px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  right: 0px;
 }
 
 /* Links inside the dropdown */
@@ -85,12 +82,49 @@ nav {
   background-color: #a7a7a7;
 }
 
+.favorites {
+  min-width: 300px;
+}
+
+.favoritesName{
+  width: 90%;
+  padding: 0 10px;
+}
+
+.material-symbols-outlined{
+  font-size: 1.3rem;
+}
+
+.favoriteTab{
+  display: flex;
+  gap: 5px;
+  cursor: pointer;
+  align-items: center;
+  border-bottom: .6px dotted black;
+  justify-content: space-between;
+  font-size: .8rem;
+  padding: 10px;
+}
+
+.favoriteTab:hover{
+  background-color: #d1cfcf;
+}
+
+.favoriteTab:last-child{
+  border: none;
+}
+
+.favoriteImg{
+  width: 60px;
+  height: 60px;
+}
+
 main{
   background-color: white;
 }
 
 #mainIMG {
-  height: 60vh;
+  height: 70vh;
   background-image: url("https://images.pexels.com/photos/60894/blue-eyes-woman-female-makeup-60894.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   background-position: center;
   background-repeat: no-repeat;

@@ -1,7 +1,6 @@
 import Section from "../components/Section";
 import categories from '../categories';
 import GrabScroll from "../components/GrabScroll";
-import Layout from "../components/Layout";
 import { useNavigate } from "react-router-dom";
 let timer;
 let allowClick = true;
@@ -32,7 +31,6 @@ export default function Home() {
 
     return (
         <div className="App">
-            <Layout>
                 <GrabScroll>
                     <aside className="categories">
                         {createCategories()}
@@ -41,7 +39,6 @@ export default function Home() {
                 <Section isProduct={false} link="https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline" />
                 <Section isProduct={false} link="https://makeup-api.herokuapp.com/api/v1/products.json?brand=annabelle" />
                 <Section isProduct={false} link="https://makeup-api.herokuapp.com/api/v1/products.json?brand=nyx" />
-            </Layout>
         </div>
     )
 }

@@ -1,10 +1,12 @@
 import './Section.css';
 import Card from "./Card.js";
 import React, { useState, useEffect } from 'react';
+import { useOutletContext } from "react-router-dom";
 
 export default function Section(props) {
     const [products, setProducts] = useState([]);
     const [pageNum, setPageNum] = useState(0);
+    const [favItems, setFavItems] = useOutletContext();
 
     const maxPageNum = Math.ceil(products.length / 20);
 
@@ -17,7 +19,7 @@ export default function Section(props) {
     function makeCard() {
         const startIndex = pageNum * 20;
         return products.slice(startIndex, startIndex + 20).map((product) => {
-            return <Card product={product} key={product.id}/>
+            return <Card product={product} key={product.id} setFavItems={setFavItems}/>
         })
     }
 
